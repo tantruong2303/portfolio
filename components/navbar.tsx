@@ -5,13 +5,13 @@ const Navbar: React.FunctionComponent<NavbarProps> = () => {
     const [isActive, setActive] = React.useState(false);
 
     return (
-        <div className="flex items-center justify-between p-4">
-            <div className="z-50 space-y-2 text-white ">
-                <h1 className="text-2xl font-semibold">TAN TRUONG</h1>
-                <div className="w-20 h-1.5 rounded-full bg-sandal-500"></div>
+        <div className="flex items-center justify-between p-4 md:p-16 sm:p-8 md:items-end ">
+            <div className="z-50 space-y-2 text-white md:space-y-4 md:flex-1 ">
+                <h1 className="text-2xl font-semibold md:text-4xl">BINH TAN</h1>
+                <div className="w-16 md:w-24 md:h-2 h-1.5 rounded-full bg-sandal-500"></div>
             </div>
 
-            <div className="z-50" onClick={() => setActive(!isActive)}>
+            <div className="z-50 md:hidden" onClick={() => setActive(!isActive)}>
                 <svg
                     width="40"
                     height="40"
@@ -42,15 +42,23 @@ const Navbar: React.FunctionComponent<NavbarProps> = () => {
                 </svg>
             </div>
             <div
-                className={`fixed top-0 left-0 z-40 w-full h-full p-4 pt-32 bg-opacity-75 bg-shark-600 transform duration-300 ${
+                className={`fixed top-0 left-0 z-40 w-full h-full p-4 md:flex-1 pt-32 md:pt-0 bg-opacity-75 bg-shark-600 md:bg-shark-500 transform duration-300 md:translate-x-0 md:static ${
                     isActive ? 'translate-x-0' : 'translate-x-full '
                 }`}
             >
-                <ul className={`text-2xl text-bombay-500 opacity-0 ${isActive ? 'fade-in' : ''}`}>
-                    <li className="py-8 duration-300 border-b-2 cursor-pointer hover:text-white border-bombay-500 hover:border-white">About</li>
-                    <li className="py-8 duration-300 border-b-2 cursor-pointer hover:text-white border-bombay-500 hover:border-white">Contact</li>
-                    <li className="py-8 duration-300 border-b-2 cursor-pointer hover:text-white border-bombay-500 hover:border-white">Services</li>
-                    <li className="py-8 duration-300 cursor-pointer hover:text-white">Projects</li>
+                <ul
+                    className={`text-2xl  text-bombay-500 md:flex md:justify-end opacity-0 md:opacity-100 md:space-x-16 ${isActive ? 'fade-in' : ''}`}
+                >
+                    <li className="py-8 duration-300 border-b-2 cursor-pointer md:py-2 hover:text-white border-bombay-500 hover:border-white md:border-none">
+                        About
+                    </li>
+                    <li className="py-8 duration-300 border-b-2 cursor-pointer md:py-2 hover:text-white border-bombay-500 hover:border-white md:border-none">
+                        Contact
+                    </li>
+                    <li className="py-8 duration-300 border-b-2 cursor-pointer md:py-2 hover:text-white border-bombay-500 hover:border-white md:border-none">
+                        Services
+                    </li>
+                    <li className="py-8 duration-300 cursor-pointer md:py-2 hover:text-white">Projects</li>
                 </ul>
             </div>
         </div>

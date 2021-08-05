@@ -77,3 +77,7 @@ svg {
 .fade-in {
     animation: fadeIn 1s 0.3s forwards;
 }
+
+.line-height-6 {
+    line-height: 3rem !important;
+}

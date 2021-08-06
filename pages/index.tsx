@@ -17,7 +17,6 @@ const Home: React.FunctionComponent<HomeProps> = () => {
             <Project />
             <Service />
             <Work />
-            <Footer />
         </>
     );
 };

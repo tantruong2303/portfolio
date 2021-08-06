@@ -10,7 +10,7 @@ const Profile: React.FunctionComponent<ProfileProps> = () => {
                 <p className="max-w-md text-white opacity-70 md:text-xl ">
                     A backend developer from FPT University in Vietnam. I love the code and want to be a full stack developer.
                 </p>
-                <button className="px-8 py-2 text-lg font-medium text-white duration-300 transform border rounded-3xl bg-sandal-500 hover:scale-110 border-sandal-500 hover:bg-shark-500">
+                <button className="px-8 py-2 text-lg font-medium text-white duration-300 transform border rounded-3xl bg-sandal-500 hover:scale-110 border-sandal-500 hover:bg-shark-500 focus:outline-none">
                     See more
                 </button>
             </div>

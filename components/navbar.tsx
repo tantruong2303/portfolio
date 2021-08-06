@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Link from 'next/link';
 export interface NavbarProps {}
 
 const Navbar: React.FunctionComponent<NavbarProps> = () => {
@@ -7,7 +8,9 @@ const Navbar: React.FunctionComponent<NavbarProps> = () => {
     return (
         <div className="flex items-center justify-between p-4 md:p-16 sm:p-8 md:items-end ">
             <div className="z-50 space-y-2 text-white md:space-y-4 md:flex-1 ">
-                <h1 className="text-2xl font-semibold md:text-4xl">BINH TAN</h1>
+                <Link href="/">
+                    <h1 className="text-2xl font-semibold cursor-pointer md:text-4xl">BINH TAN</h1>
+                </Link>
                 <div className="w-16 md:w-24 md:h-2 h-1.5 rounded-full bg-sandal-500"></div>
             </div>
 
@@ -53,12 +56,16 @@ const Navbar: React.FunctionComponent<NavbarProps> = () => {
                         About
                     </li>
                     <li className="py-8 duration-300 border-b-2 cursor-pointer md:py-2 hover:text-white border-bombay-500 hover:border-white md:border-none">
-                        Contact
+                        <a href="/contact">Contact</a>
                     </li>
                     <li className="py-8 duration-300 border-b-2 cursor-pointer md:py-2 hover:text-white border-bombay-500 hover:border-white md:border-none">
-                        Services
+                        <a href="#server">Services</a>
                     </li>
-                    <li className="py-8 duration-300 cursor-pointer md:py-2 hover:text-white">Projects</li>
+                    <li className="py-8 duration-300 cursor-pointer md:py-2 hover:text-white">
+                        <a href="https://github.com/tantruong2303" target="__blank">
+                            Projects
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>

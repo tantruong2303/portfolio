@@ -4,15 +4,18 @@ export interface ProjectProps {}
 
 const Project: React.FunctionComponent<ProjectProps> = () => {
     return (
-        <div className="p-4 bg-white ">
-            <div className="mx-auto space-y-8 md:w-4/5">
-                <div className="">
-                    <h1 className="text-xl font-semibold text-gray-500">PROJECTS</h1>
-                    <div className="h-2 bg-gray-400 bg-opacity-30"></div>
+        <div className="p-4 bg-white md:py-24 ">
+            <div className="mx-auto space-y-8 xl:w-4/5">
+                <div className="space-y-2 ">
+                    <h1 className="text-xl font-semibold text-gray-600">PROJECTS</h1>
+                    <div className="h-1.5 bg-gray-600 opacity-20 "></div>
                 </div>
-                <div className="flex flex-col space-y-4 md:space-x-16 md:flex-row md:space-y-0">
-                    <div className="space-y-4">
-                        <img src="/asset/images/project1.jpg" />
+                <div className="flex flex-col items-center justify-center space-y-4 md:py-8 md:space-x-16 md:flex-row md:space-y-0 ">
+                    <div className="max-w-md px-4 pt-6 space-y-4">
+                        <div className="relative">
+                            <img src="/asset/images/project1.jpg" className="relative z-20 block object-cover w-full" />
+                            <div className="absolute top-0 left-0 z-10 w-full h-full transform scale-x-110 scale-y-90 -translate-y-8 bg-gray-200"></div>
+                        </div>
                         <div className="space-y-4">
                             <h1 className="text-4xl font-semibold">MyChess</h1>
                             <p className="opacity-80">
@@ -20,14 +23,17 @@ const Project: React.FunctionComponent<ProjectProps> = () => {
                             </p>
                             <a
                                 href="/"
-                                className="inline-block px-8 py-2 text-lg font-medium text-white duration-300 transform border rounded-3xl bg-sandal-500 hover:scale-110 border-sandal-500 hover:bg-white hover:text-black"
+                                className="inline-block px-6 py-2 text-lg font-medium text-white duration-300 transform border rounded-3xl bg-sandal-500 hover:scale-110 border-sandal-500 hover:bg-white hover:text-black"
                             >
                                 View Details
                             </a>
                         </div>
                     </div>
-                    <div className="space-y-4">
-                        <img src="/asset/images/project1.jpg" />
+                    <div className="max-w-md px-4 pt-6 space-y-4">
+                        <div className="relative">
+                            <img src="/asset/images/project1.jpg" className="relative z-20 block object-cover w-full" />
+                            <div className="absolute top-0 left-0 z-10 w-full h-full transform scale-x-110 scale-y-90 -translate-y-8 bg-gray-200"></div>
+                        </div>
                         <div className="space-y-4">
                             <h1 className="text-4xl font-semibold">MyChess</h1>
                             <p className="opacity-80">
@@ -35,7 +41,25 @@ const Project: React.FunctionComponent<ProjectProps> = () => {
                             </p>
                             <a
                                 href="/"
-                                className="inline-block px-8 py-2 text-lg font-medium text-white duration-300 transform border rounded-3xl bg-sandal-500 hover:scale-110 border-sandal-500 hover:bg-white hover:text-black"
+                                className="inline-block px-6 py-2 text-lg font-medium text-white duration-300 transform border rounded-3xl bg-sandal-500 hover:scale-110 border-sandal-500 hover:bg-white hover:text-black"
+                            >
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                    <div className="max-w-md px-4 pt-6 space-y-4">
+                        <div className="relative">
+                            <img src="/asset/images/project1.jpg" className="relative z-20 block object-cover w-full" />
+                            <div className="absolute top-0 left-0 z-10 w-full h-full transform scale-x-110 scale-y-90 -translate-y-8 bg-gray-200"></div>
+                        </div>
+                        <div className="space-y-4">
+                            <h1 className="text-4xl font-semibold">MyChess</h1>
+                            <p className="opacity-80">
+                                An online web games allow people can play chess or tic tac toe and share their happiness across the world.
+                            </p>
+                            <a
+                                href="/"
+                                className="inline-block px-6 py-2 text-lg font-medium text-white duration-300 transform border rounded-3xl bg-sandal-500 hover:scale-110 border-sandal-500 hover:bg-white hover:text-black"
                             >
                                 View Details
                             </a>

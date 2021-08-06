@@ -11,31 +11,28 @@ const Work: React.FunctionComponent<WorkProps> = () => {
             <div className="space-y-4">
                 <h1 className="text-3xl md:text-4xl">Let’s Work Together</h1>
                 <p className="opacity-60">Get more about my information.</p>
-                <button className="px-8 py-2 text-lg font-medium text-white duration-300 transform border rounded-3xl bg-sandal-500 hover:scale-110 border-sandal-500 hover:bg-shark-500">
+                <a
+                    href="/contact"
+                    className="inline-block px-8 py-2 text-lg font-medium text-white duration-300 transform border rounded-3xl bg-sandal-500 hover:scale-110 border-sandal-500 hover:bg-shark-500"
+                >
                     Get In Touch
-                </button>
+                </a>
             </div>
             <div className="space-y-4">
-                <div className="flex items-center space-x-2">
+                <a href="mailTo:TANTRUONG2303@GMAIL.COM" className="flex items-center space-x-2 font-medium">
                     <GmailLogo />
+                    <p>TANTRUONG2303@GMAIL.COM</p>
+                </a>
 
-                    <a href="/" className="font-medium">
-                        TANTRUONG2303@GMAIL.COM
-                    </a>
-                </div>
-                <div className="flex items-center space-x-2">
+                <a href="https://github.com/tantruong2303" className="flex items-center space-x-2 font-medium" target="__blank">
                     <GithubLogo />
+                    <p>ON GITHUB</p>
+                </a>
 
-                    <a href="/" className="font-medium">
-                        ON GITHUB
-                    </a>
-                </div>
-                <div className="flex items-center space-x-2">
+                <a href="https://www.facebook.com/tantruong23" className="flex items-center space-x-2 font-medium" target="__blank">
                     <FacebookLogo />
-                    <a href="/" className="font-medium">
-                        ON FACEBOOK
-                    </a>
-                </div>
+                    <p>ON FACEBOOK</p>
+                </a>
             </div>
         </div>
     );

@@ -59,6 +59,11 @@ const Navbar: React.FunctionComponent<NavbarProps> = () => {
                         <a href="/contact">Contact</a>
                     </li>
                     <li className="py-8 duration-300 border-b-2 cursor-pointer md:py-2 hover:text-white border-bombay-500 hover:border-white md:border-none">
+                        <a href="https://tantruong2303.github.io/cv/truongbinhtan.pdf" target="__blank">
+                            CV
+                        </a>
+                    </li>
+                    <li className="py-8 duration-300 border-b-2 cursor-pointer md:py-2 hover:text-white border-bombay-500 hover:border-white md:border-none">
                         <a href="#server">Services</a>
                     </li>
                     <li className="py-8 duration-300 cursor-pointer md:py-2 hover:text-white">

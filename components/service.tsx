@@ -20,7 +20,8 @@ const Service: React.FunctionComponent<ServiceProps> = () => {
                                     An online web games allow people can play chess or tic tac toe and share their happiness across the world.
                                 </p>
                                 <a
-                                    href="/"
+                                    href="https://m.me/tantruong23"
+                                    target="__blank"
                                     className="inline-block px-8 py-2 text-lg font-medium text-white duration-300 transform border rounded-3xl bg-sandal-500 hover:scale-110 border-sandal-500 hover:bg-white hover:text-black"
                                 >
                                     Chat Now
